@@ -1,0 +1,925 @@
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote
+$ git init
+Initialized empty Git repository in C:/Users/tatya/Desktop/GIT Remote/.git/
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git clone https://github.com/Tania1313/Hillel_Kovalenko_t12.git
+Cloning into 'Hillel_Kovalenko_t12'...
+warning: You appear to have cloned an empty repository.
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git add .
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git commit -m "readme"
+[master (root-commit) b446e16] readme
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hillel_Kovalenko_t12/README.md
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git branch develop
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git checkout develop
+Switched to branch 'develop'
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (develop)
+$ git add .
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (develop)
+$ git commit -m "empty index"
+[develop ed2bd48] empty index
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hillel_Kovalenko_t12/index.html
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (develop)
+$ git branch test
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (develop)
+$ git checkout test
+Switched to branch 'test'
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (test)
+$ git add .
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (test)
+$ git commit -m "img folder"
+[test 0f1361e] img folder
+ 8 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hillel_Kovalenko_t12/img/bg/bg-header.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/favicon/favicon-16x16.png
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/big/site-apollo.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/big/site-organica.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/big/site-personal.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/project_apollo.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/project_organica.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/project_portfolio.jpg
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (test)
+$ git add .
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (test)
+$ git commit -m "change index"
+[test 2e248b2] change index
+ 1 file changed, 170 insertions(+)
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (test)
+$ git checkout develop
+Switched to branch 'develop'
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (develop)
+$ git branch release
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (develop)
+$ git checkout release
+Switched to branch 'release'
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (release)
+$ git add .
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (release)
+$ git commit -m "css folder"
+[release 4a548a0] css folder
+ 1 file changed, 287 insertions(+)
+ create mode 100644 Hillel_Kovalenko_t12/css/main.css
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (release)
+$ git add .
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (release)
+$ git commit -m "change index"
+[release 9587b59] change index
+ 1 file changed, 166 insertions(+)
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (release)
+$ git checkout develop
+Switched to branch 'develop'
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (develop)
+$ git merge test
+Updating ed2bd48..2e248b2
+Fast-forward
+ Hillel_Kovalenko_t12/img/bg/bg-header.jpg          | Bin 0 -> 123896 bytes
+ Hillel_Kovalenko_t12/img/favicon/favicon-16x16.png | Bin 0 -> 850 bytes
+ .../img/portfolio/big/site-apollo.jpg              | Bin 0 -> 156389 bytes
+ .../img/portfolio/big/site-organica.jpg            | Bin 0 -> 127098 bytes
+ .../img/portfolio/big/site-personal.jpg            | Bin 0 -> 214786 bytes
+ .../img/portfolio/project_apollo.jpg               | Bin 0 -> 25303 bytes
+ .../img/portfolio/project_organica.jpg             | Bin 0 -> 24144 bytes
+ .../img/portfolio/project_portfolio.jpg            | Bin 0 -> 27342 bytes
+ Hillel_Kovalenko_t12/index.html                    | 170 +++++++++++++++++++++
+ 9 files changed, 170 insertions(+)
+ create mode 100644 Hillel_Kovalenko_t12/img/bg/bg-header.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/favicon/favicon-16x16.png
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/big/site-apollo.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/big/site-organica.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/big/site-personal.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/project_apollo.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/project_organica.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/project_portfolio.jpg
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (develop)
+$ git merge release
+Auto-merging Hillel_Kovalenko_t12/index.html
+CONFLICT (content): Merge conflict in Hillel_Kovalenko_t12/index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (develop|MERGING)
+$ git add .
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (develop|MERGING)
+$ git commit -m "Merged master fixed conflict."
+[develop c0e1e9c] Merged master fixed conflict.
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (develop)
+$ git checkout test
+Switched to branch 'test'
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (test)
+$ git merge develop
+Updating 2e248b2..c0e1e9c
+Fast-forward
+ Hillel_Kovalenko_t12/css/main.css | 287 ++++++++++++++++++++++++++++++++++++++
+ Hillel_Kovalenko_t12/index.html   |   6 +-
+ 2 files changed, 292 insertions(+), 1 deletion(-)
+ create mode 100644 Hillel_Kovalenko_t12/css/main.css
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (test)
+$ git chekout release
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (test)
+$ git checkout release
+Switched to branch 'release'
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (release)
+$ git merge develop
+Updating 9587b59..c0e1e9c
+Fast-forward
+ Hillel_Kovalenko_t12/img/bg/bg-header.jpg              | Bin 0 -> 123896 bytes
+ Hillel_Kovalenko_t12/img/favicon/favicon-16x16.png     | Bin 0 -> 850 bytes
+ Hillel_Kovalenko_t12/img/portfolio/big/site-apollo.jpg | Bin 0 -> 156389 bytes
+ .../img/portfolio/big/site-organica.jpg                | Bin 0 -> 127098 bytes
+ .../img/portfolio/big/site-personal.jpg                | Bin 0 -> 214786 bytes
+ Hillel_Kovalenko_t12/img/portfolio/project_apollo.jpg  | Bin 0 -> 25303 bytes
+ .../img/portfolio/project_organica.jpg                 | Bin 0 -> 24144 bytes
+ .../img/portfolio/project_portfolio.jpg                | Bin 0 -> 27342 bytes
+ Hillel_Kovalenko_t12/index.html                        |   8 ++++++++
+ 9 files changed, 8 insertions(+)
+ create mode 100644 Hillel_Kovalenko_t12/img/bg/bg-header.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/favicon/favicon-16x16.png
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/big/site-apollo.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/big/site-organica.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/big/site-personal.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/project_apollo.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/project_organica.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/project_portfolio.jpg
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (release)
+$ git checkout master
+Switched to branch 'master'
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git merge develop
+Updating b446e16..c0e1e9c
+Fast-forward
+ Hillel_Kovalenko_t12/css/main.css                  | 287 +++++++++++++++++++++
+ Hillel_Kovalenko_t12/img/bg/bg-header.jpg          | Bin 0 -> 123896 bytes
+ Hillel_Kovalenko_t12/img/favicon/favicon-16x16.png | Bin 0 -> 850 bytes
+ .../img/portfolio/big/site-apollo.jpg              | Bin 0 -> 156389 bytes
+ .../img/portfolio/big/site-organica.jpg            | Bin 0 -> 127098 bytes
+ .../img/portfolio/big/site-personal.jpg            | Bin 0 -> 214786 bytes
+ .../img/portfolio/project_apollo.jpg               | Bin 0 -> 25303 bytes
+ .../img/portfolio/project_organica.jpg             | Bin 0 -> 24144 bytes
+ .../img/portfolio/project_portfolio.jpg            | Bin 0 -> 27342 bytes
+ Hillel_Kovalenko_t12/index.html                    | 174 +++++++++++++
+ 10 files changed, 461 insertions(+)
+ create mode 100644 Hillel_Kovalenko_t12/css/main.css
+ create mode 100644 Hillel_Kovalenko_t12/img/bg/bg-header.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/favicon/favicon-16x16.png
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/big/site-apollo.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/big/site-organica.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/big/site-personal.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/project_apollo.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/project_organica.jpg
+ create mode 100644 Hillel_Kovalenko_t12/img/portfolio/project_portfolio.jpg
+ create mode 100644 Hillel_Kovalenko_t12/index.html
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --help
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git --log-size
+unknown option: --log-size
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git -p
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git --follow
+unknown option: --follow
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git lo --email
+git: 'lo' is not a git command. See 'git --help'.
+
+The most similar commands are
+        log
+        flow
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --email
+fatal: unrecognized argument: --email
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --follow
+fatal: --follow requires exactly one pathspec
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --no-decorate
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit 9587b59a850305a952a0b7f5388654478750f06a
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+commit 2e248b2495d7559b778c5f8feeca602f8f360dfc
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --decorate=full
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> refs/heads/master, refs/heads/test, refs/heads/release, refs/heads/develop)
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit 9587b59a850305a952a0b7f5388654478750f06a
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+commit 2e248b2495d7559b778c5f8feeca602f8f360dfc
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --source
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 HEAD (HEAD -> master, test, release, develop)
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit 9587b59a850305a952a0b7f5388654478750f06a HEAD
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf HEAD
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+commit 2e248b2495d7559b778c5f8feeca602f8f360dfc HEAD
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --full-diff
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> master, test, release, develop)
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit 9587b59a850305a952a0b7f5388654478750f06a
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+commit 2e248b2495d7559b778c5f8feeca602f8f360dfc
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log -l
+fatal: Option 'l' requires a value
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --log-size
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> master, test, release, develop)
+log size 155
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit 9587b59a850305a952a0b7f5388654478750f06a
+log size 115
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+log size 113
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --max-count=10
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> master, test, release, develop)
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit 9587b59a850305a952a0b7f5388654478750f06a
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+commit 2e248b2495d7559b778c5f8feeca602f8f360dfc
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+:...skipping...
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> master, test, release, develop)
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit 9587b59a850305a952a0b7f5388654478750f06a
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+commit 2e248b2495d7559b778c5f8feeca602f8f360dfc
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+
+    change index
+
+commit 0f1361e96b7b6d94df83a142ec53e9c2a657a790
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:24:09 2019 +0300
+
+    img folder
+
+commit ed2bd489c748d6905bec2c9670f657ef55dc2ff7
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:22:16 2019 +0300
+
+    empty index
+
+commit b446e16a8fb7d8eb133d5eb44a4618b76ac6e5a3
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --author
+fatal: Option '--author' requires a value
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --author=Tania1313
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> master, test, release, develop)
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit 9587b59a850305a952a0b7f5388654478750f06a
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+commit 2e248b2495d7559b778c5f8feeca602f8f360dfc
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+
+    change index
+
+commit 0f1361e96b7b6d94df83a142ec53e9c2a657a790
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:24:09 2019 +0300
+
+    img folder
+
+commit ed2bd489c748d6905bec2c9670f657ef55dc2ff7
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:22:16 2019 +0300
+
+    empty index
+
+commit b446e16a8fb7d8eb133d5eb44a4618b76ac6e5a3
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --merges
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> master, test, release, develop)
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --remove-empty
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> master, test, release, develop)
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit 9587b59a850305a952a0b7f5388654478750f06a
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+commit 2e248b2495d7559b778c5f8feeca602f8f360dfc
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+
+    change index
+
+commit 0f1361e96b7b6d94df83a142ec53e9c2a657a790
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:24:09 2019 +0300
+
+    img folder
+
+commit ed2bd489c748d6905bec2c9670f657ef55dc2ff7
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:22:16 2019 +0300
+
+    empty index
+
+commit b446e16a8fb7d8eb133d5eb44a4618b76ac6e5a3
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --no-merges
+commit 9587b59a850305a952a0b7f5388654478750f06a
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+commit 2e248b2495d7559b778c5f8feeca602f8f360dfc
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+
+    change index
+
+commit 0f1361e96b7b6d94df83a142ec53e9c2a657a790
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:24:09 2019 +0300
+
+    img folder
+
+commit ed2bd489c748d6905bec2c9670f657ef55dc2ff7
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:22:16 2019 +0300
+
+    empty index
+
+commit b446e16a8fb7d8eb133d5eb44a4618b76ac6e5a3
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:19:37 2019 +0300
+
+    readme
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --first-parent
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> master, test, release, develop)
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit 2e248b2495d7559b778c5f8feeca602f8f360dfc
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+
+    change index
+
+commit 0f1361e96b7b6d94df83a142ec53e9c2a657a790
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:24:09 2019 +0300
+
+    img folder
+
+commit ed2bd489c748d6905bec2c9670f657ef55dc2ff7
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:22:16 2019 +0300
+
+    empty index
+
+commit b446e16a8fb7d8eb133d5eb44a4618b76ac6e5a3
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:19:37 2019 +0300
+
+    readme
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --all
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> master, test, release, develop)
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit 9587b59a850305a952a0b7f5388654478750f06a
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+commit 2e248b2495d7559b778c5f8feeca602f8f360dfc
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+
+    change index
+
+commit 0f1361e96b7b6d94df83a142ec53e9c2a657a790
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:24:09 2019 +0300
+
+    img folder
+
+commit ed2bd489c748d6905bec2c9670f657ef55dc2ff7
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:22:16 2019 +0300
+
+    empty index
+
+commit b446e16a8fb7d8eb133d5eb44a4618b76ac6e5a3
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --branches=test
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --branches=3
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --cherry-mark
+commit + c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> master, test, release, develop)
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit + 9587b59a850305a952a0b7f5388654478750f06a
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit + 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+commit + 2e248b2495d7559b778c5f8feeca602f8f360dfc
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+
+    change index
+
+commit + 0f1361e96b7b6d94df83a142ec53e9c2a657a790
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:24:09 2019 +0300
+
+    img folder
+
+commit + ed2bd489c748d6905bec2c9670f657ef55dc2ff7
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:22:16 2019 +0300
+
+    empty index
+
+commit + b446e16a8fb7d8eb133d5eb44a4618b76ac6e5a3
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --merge
+fatal: --merge without MERGE_HEAD?
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --dese
+fatal: unrecognized argument: --dese
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --dense
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> master, test, release, develop)
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit 9587b59a850305a952a0b7f5388654478750f06a
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+commit 2e248b2495d7559b778c5f8feeca602f8f360dfc
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+
+    change index
+
+commit 0f1361e96b7b6d94df83a142ec53e9c2a657a790
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:24:09 2019 +0300
+
+    img folder
+
+commit ed2bd489c748d6905bec2c9670f657ef55dc2ff7
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:22:16 2019 +0300
+
+    empty index
+
+commit b446e16a8fb7d8eb133d5eb44a4618b76ac6e5a3
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --sparce
+fatal: unrecognized argument: --sparce
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --sparse
+commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> master, test, release, develop)
+Merge: 2e248b2 9587b59
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:51:13 2019 +0300
+
+    Merged master fixed conflict.
+
+commit 9587b59a850305a952a0b7f5388654478750f06a
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:39:20 2019 +0300
+
+    change index
+
+commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:30:19 2019 +0300
+
+    css folder
+
+commit 2e248b2495d7559b778c5f8feeca602f8f360dfc
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:27:27 2019 +0300
+
+    change index
+
+commit 0f1361e96b7b6d94df83a142ec53e9c2a657a790
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:24:09 2019 +0300
+
+    img folder
+
+commit ed2bd489c748d6905bec2c9670f657ef55dc2ff7
+Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+Date:   Tue May 14 23:22:16 2019 +0300
+
+    empty index
+
+commit b446e16a8fb7d8eb133d5eb44a4618b76ac6e5a3
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git reflog
+c0e1e9c (HEAD -> master, test, release, develop) HEAD@{0}: merge develop: Fast-forward
+b446e16 HEAD@{1}: checkout: moving from release to master
+c0e1e9c (HEAD -> master, test, release, develop) HEAD@{2}: merge develop: Fast-forward
+9587b59 HEAD@{3}: checkout: moving from test to release
+c0e1e9c (HEAD -> master, test, release, develop) HEAD@{4}: merge develop: Fast-forward
+2e248b2 HEAD@{5}: checkout: moving from develop to test
+c0e1e9c (HEAD -> master, test, release, develop) HEAD@{6}: commit (merge): Merged master fixed conflict.
+2e248b2 HEAD@{7}: merge test: Fast-forward
+ed2bd48 HEAD@{8}: checkout: moving from release to develop
+9587b59 HEAD@{9}: commit: change index
+4a548a0 HEAD@{10}: commit: css folder
+ed2bd48 HEAD@{11}: checkout: moving from develop to release
+ed2bd48 HEAD@{12}: checkout: moving from test to develop
+2e248b2 HEAD@{13}: commit: change index
+0f1361e HEAD@{14}: commit: img folder
+ed2bd48 HEAD@{15}: checkout: moving from develop to test
+ed2bd48 HEAD@{16}: commit: empty index
+b446e16 HEAD@{17}: checkout: moving from master to develop
+b446e16 HEAD@{18}: commit (initial): readme
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git log --graph
+*   commit c0e1e9ceba2859e515a5e99972cdc49822dbc625 (HEAD -> master, test, release, develop)
+|\  Merge: 2e248b2 9587b59
+| | Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+| | Date:   Tue May 14 23:51:13 2019 +0300
+| |
+| |     Merged master fixed conflict.
+| |
+| * commit 9587b59a850305a952a0b7f5388654478750f06a
+| | Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+| | Date:   Tue May 14 23:39:20 2019 +0300
+| |
+| |     change index
+| |
+| * commit 4a548a0e8a1de8ae725e03a1fa5df54a8a8d1abf
+| | Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+| | Date:   Tue May 14 23:30:19 2019 +0300
+| |
+| |     css folder
+| |
+* | commit 2e248b2495d7559b778c5f8feeca602f8f360dfc
+| | Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+| | Date:   Tue May 14 23:27:27 2019 +0300
+| |
+| |     change index
+| |
+* | commit 0f1361e96b7b6d94df83a142ec53e9c2a657a790
+|/  Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+|   Date:   Tue May 14 23:24:09 2019 +0300
+|
+|       img folder
+|
+* commit ed2bd489c748d6905bec2c9670f657ef55dc2ff7
+| Author: Tania1313 <you@example.comko.tatyana13@gmail.com>
+| Date:   Tue May 14 23:22:16 2019 +0300
+|
+|     empty index
+|
+* commit b446e16a8fb7d8eb133d5eb44a4618b76ac6e5a3
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ git reflog
+c0e1e9c (HEAD -> master, test, release, develop) HEAD@{0}: merge develop: Fast-forward
+b446e16 HEAD@{1}: checkout: moving from release to master
+c0e1e9c (HEAD -> master, test, release, develop) HEAD@{2}: merge develop: Fast-forward
+9587b59 HEAD@{3}: checkout: moving from test to release
+c0e1e9c (HEAD -> master, test, release, develop) HEAD@{4}: merge develop: Fast-forward
+2e248b2 HEAD@{5}: checkout: moving from develop to test
+c0e1e9c (HEAD -> master, test, release, develop) HEAD@{6}: commit (merge): Merged master fixed conflict.
+2e248b2 HEAD@{7}: merge test: Fast-forward
+ed2bd48 HEAD@{8}: checkout: moving from release to develop
+9587b59 HEAD@{9}: commit: change index
+4a548a0 HEAD@{10}: commit: css folder
+ed2bd48 HEAD@{11}: checkout: moving from develop to release
+ed2bd48 HEAD@{12}: checkout: moving from test to develop
+2e248b2 HEAD@{13}: commit: change index
+0f1361e HEAD@{14}: commit: img folder
+ed2bd48 HEAD@{15}: checkout: moving from develop to test
+ed2bd48 HEAD@{16}: commit: empty index
+b446e16 HEAD@{17}: checkout: moving from master to develop
+b446e16 HEAD@{18}: commit (initial): readme
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$ ^C
+
+tatya@DESKTOP-FG1JT4N MINGW64 ~/Desktop/GIT Remote (master)
+$
